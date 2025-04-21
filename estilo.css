@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  h1 {
+    color: #003366;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #003366;
+  }
+  
+  p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  input, select, button {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  input[type="number"] {
+    appearance: textfield;
+  }
+  
+  input[type="text"], select {
+    background-color: #fefefe;
+  }
+  
+  button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+  }
+  
+  #formulario-cadastro, #relatorio-alunos {
+    background-color: white;
+    margin: 20px auto;
+    max-width: 500px;
+  }
+  
+  #formulario-cadastro {
+    display: none;
+  }
+  
+  #relatorio-alunos {
+    display: none;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+  }
+  
+  .menu-opcoes {
+    background-color: #cecece;
+    color: white;
+    width: 100%;
+    max-width: 250px;
+    margin: 20px auto;
+  }
+  
+  .menu-opcoes p {
+    font-size: 16px;
+  }
+  

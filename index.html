@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Alunos - FATEC</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <h1>Cadastro de Alunos - FATEC</h1>
+
+  <div class="menu-opcoes">
+    <p>1 - Cadastrar Alunos</p>
+    <p>2 - Alunos em ordem crescente por nome</p>
+    <p>3 - Alunos em ordem decrescente por RA</p>
+    <p>4 - Alunos em ordem crescente por Nome, Aprovados</p>
+    <p>5 - Encerrar o programa</p>
+  </div>
+
+  <input type="text" id="entrada-opcao" placeholder="Digite a opção (1-5)" maxlength="1" style="max-width: 250px; display: block; margin: 10px auto;" />
+
+  <div id="formulario-cadastro">
+    <h2>Cadastro de Aluno</h2>
+    <form id="cadastro-aluno-form">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" /><br><br>
+
+      <label for="ra">RA:</label>
+      <input type="text" id="ra" /><br><br>
+
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" /><br><br>
+
+      <label for="sexo">Sexo:</label>
+      <select id="sexo">
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="outro">Outro</option>
+      </select><br><br>
+
+      <label for="media">Média:</label>
+      <input type="number" id="media" step="0.5" /><br><br>
+
+      <label for="resultado">Resultado:</label>
+      <select id="resultado">
+        <option value="aprovado">Aprovado</option>
+        <option value="reprovado">Reprovado</option>
+      </select><br><br>
+
+      <button type="button" id="cadastrar-aluno">Cadastrar</button>
+    </form>
+  </div>
+
+  <div id="relatorio-alunos">
+    <h2>Relatório de Alunos</h2>
+    <div id="conteudo-relatorio"></div>
+  </div>
+
+  <script src="server.js"></script>
+</body>
+</html>
